@@ -1,0 +1,23 @@
+[project]
+name = "demopkg"
+version = "0.1.0"
+description = "This is a cool demo testproject :) as a standin for complex software"
+readme = "README.md"
+authors = [
+    { name = "Jannik Stebani", email = "jannik.stebani@physik.uni-wuerzburg.de" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "rich",
+    "pytest"
+]
+
+[project.scripts]
+greet = "demopkg.greetings:greet"
+tree = "demopkg.tree:tree"
+spinner = "demopkg.spinner:spinner"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+

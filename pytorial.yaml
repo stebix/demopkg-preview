@@ -1,0 +1,7 @@
+name: pytorial
+channels:
+  - conda-forge
+dependencies:
+  - rich
+  - ruff
+  - pytest 
