@@ -19,6 +19,6 @@ def spinner() -> None:
             for spinner_name in sorted(SPINNERS.keys())
         ]
     )
-    with Live(all_spinners, refresh_per_second=20) as live:
+    with Live(all_spinners, refresh_per_second=20):
         while True:
             sleep(0.1)

@@ -1,7 +1,6 @@
 """
 Basic unit tests for the full package.
 """
-import pytest
 
 class TestBasics:
     """
@@ -23,6 +22,6 @@ class TestBasics:
 
     def test_returns_six_sixes(self):
         from demopkg.basics import returns_ones
-        expected = [6, 6, 6, 6, 6, 6]
+        expected = [1, 1, 1, 1, 1, 1]
         result = returns_ones(6)
         assert result == expected, f'Expected {expected}, got {result}'
